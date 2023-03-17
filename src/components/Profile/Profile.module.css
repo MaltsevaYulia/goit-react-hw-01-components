@@ -1,0 +1,38 @@
+.profile {
+  width: max-content;
+  padding: 10px;
+  text-align: center;
+  outline: 1px solid red;
+}
+
+.description {
+  font-size: 40 px;
+  color: #010101;
+}
+
+.avatar {
+  width: 240px;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.statsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.statsQuantity {
+    font-weight: 700;
+}

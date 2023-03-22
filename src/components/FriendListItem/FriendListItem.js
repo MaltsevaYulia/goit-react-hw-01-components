@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import css from './FriendListItem.module.css';
 import { BsFillCircleFill } from 'react-icons/bs';
 
-export const FriendListItem = ({ friend: { avatar, name, isOnline, id } }) => {
+export const FriendListItem = ( { avatar, name, isOnline } ) => {
   return (
-    <li className={css.friend_item} key={id}>
+    <li className={css.friend_item} >
       <span>
         <BsFillCircleFill
           className={isOnline ? css.online : css.ofline}
@@ -17,12 +17,7 @@ export const FriendListItem = ({ friend: { avatar, name, isOnline, id } }) => {
 };
 
 FriendListItem.proTotype = {
-  friend: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
       avatar: PropTypes.string.isRequired,
-    }).isRequired
-  ),
 };
